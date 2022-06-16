@@ -19,7 +19,7 @@ col_list = [args.source,args.dest]
 if args.weight is not None:
     col_list.append(args.weight)
 
-df = pd.read_csv(args.file,sep=',',usecols=col_list)#nrows
+df = pd.read_csv(args.file,sep=',',usecols=col_list)
 nodes = pd.DataFrame()
 nodes["label"] = pd.unique(pd.concat([df[args.source],df[args.dest]]))
 nodes.insert(0,"id",nodes["label"])
