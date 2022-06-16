@@ -39,6 +39,3 @@ nodes.to_csv("nodes.csv",index=False)
 edges.to_csv("edges.csv",index=False)
     
 
-#python nodeprep.py "C:\Users\ASUS\Documents\Gephiprep\transactions.csv" -s SENDER_ACCOUNT_ID -d RECEIVER_ACCOUNT_ID
-#remove_node_edge_nodes(nodes,edges)
-
